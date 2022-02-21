@@ -95,6 +95,7 @@ class Jogo extends React.Component {
     const { questions } = this.state;
     this.setState((prevState) => ({
       questions: prevState.questions + 1,
+      timer: 30,
     }));
     if (questions === LAST_QUESTION) history.push('/feedback');
   };
